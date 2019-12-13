@@ -13,9 +13,9 @@ namespace Model.Pieces
             new Vector(1, -1), // bottom right diag
             new Vector(-1, 0), // directly left
             new Vector(1, 0),  //directly right
-            new Vector(-1, 1),  //top left diag
-            new Vector(0, 1),  //directly above
-            new Vector(1, 1)   //top right diag
+            new Vector(-1, 1),  //top left diag//
+            new Vector(0, 1),  //directly above//
+            new Vector(1, 1)   //top right diag//
         };
 
         public override BasePiece[][,] GetMoves(BasePiece[,] board)

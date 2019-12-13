@@ -28,9 +28,14 @@ namespace ChessConsoleApp
 			board[0, 4] = new King() { Color = Color.White, Location = new Vector(0, 4) };
 			//board[0, 3] = new MySuperCoolPiece() { Color = Color.White, Location = new Vector(0, 3) };
 			board[7, 4] = new King() { Color = Color.Black, Location = new Vector(7, 4) };
-			//board[7, 3] = new MySuperCoolPiece() { Color = Color.black, Location = new Vector(7, 3) };
+            //board[7, 3] = new MySuperCoolPiece() { Color = Color.black, Location = new Vector(7, 3) };
 
-			for (int i = 0; i < 8; i++)
+            board[0, 3] = new Trident() { Color = Color.White, Location = new Vector(0, 3) };
+            //board[0, 3] = new MySuperCoolPiece() { Color = Color.White, Location = new Vector(0, 3) };
+            board[7, 3] = new Trident() { Color = Color.Black, Location = new Vector(7, 3) };
+            //board[7, 3] = new MySuperCoolPiece() { Color = Color.black, Location = new Vector(7, 3) };
+
+            for (int i = 0; i < 8; i++)
             {
 				board[1, i] = new Pawn() { Color = Color.White, Location = new Vector(1, i) };
 				board[6, i] = new Pawn() { Color = Color.Black, Location = new Vector(6, i) };

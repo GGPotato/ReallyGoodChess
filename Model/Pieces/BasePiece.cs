@@ -15,7 +15,7 @@ namespace Model
 
 		public char AsColoredChar()
 		{
-			return (char)(Char + (int)Color * ToBlackChar);
+			return Char;
 		}
 
 		protected bool IsOnBoard(Vector landed)

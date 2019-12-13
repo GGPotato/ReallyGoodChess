@@ -7,7 +7,7 @@ namespace Model.Pieces
 	{
 		protected override char Char => '♙';
 
-		private Vector Front => new Vector(Color == Color.White ? 1 :-1, 0);
+		private Vector Front => new Vector(Color == Color.White ? 1 : -1, 0);
 
 		public override BasePiece[][,] GetMoves(BasePiece[,] board)
 		{
